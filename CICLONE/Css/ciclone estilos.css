@@ -1,0 +1,789 @@
+@charset "utf-8";
+/* CSS do site Ciclone
+--------------------------------------------------------------
+Trabalho de grupo para a cadeira de Web Design
+Fbaup ano letivo 2023/2024
+
+Grupo:
+Luciano Silva- up202108181
+Maria João- up202108306
+Beatriz Leal- up202105710
+Isabela- up202006695
+
+Criação do Css - 13/11/2023
+Ultima ediçao- 17/11/2023
+
+
+*/
+
+/* estilos para o menu superior do site ---------------------------------*/
+
+/* ヾ(⌐■_■)ノ♪ */
+
+body, html {
+      margin: 0;
+      padding: 0;
+	  box-sizing: border-box;
+    }
+
+#homepage{
+	     background-color: #99B69D;
+}
+
+header{
+	background-color: #694070;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0.8;
+	z-index: 50000;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.a1{
+	color: white;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+.a2{
+	text-align: left;
+	background-color: #5f4564;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	
+  padding-bottom: 9px;
+			padding-top: 10px;
+	 padding-left: 8px;
+	padding-right: 57.5px;
+	
+}
+
+ .a2:hover {
+            background-color: white;
+	 color: #5f4564;
+	   	   
+	
+        }
+
+
+.a3{
+	color: white;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+.navbar{
+	min-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 30px;
+	padding-left: 30px;
+	z-index: 50000;
+	position: relative;
+}
+
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	z-index: 50000;
+}
+
+.nav-branding{
+	font-size: 2rem;
+}
+
+.nav-link{
+	transition: 0.7s ease;
+	
+}
+
+.nav-link:hover{
+	color: aqua
+		
+}
+
+.nav-item {
+    margin-right: 20px;
+	z-index: 50000;
+}
+
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	 -webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	background-color: white;
+}
+
+.submenu {
+	
+	list-style: none;
+            display: none;
+            position: absolute;
+	 flex-direction: column;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	 text-align: left;
+    padding-left: 0px; 
+
+	 
+	
+	
+        }
+
+        .nav-item:hover .submenu {
+            display: block;
+				
+	
+			
+        }
+
+        .submenu-item {
+          margin-bottom: 8px;
+			padding-top: 10px;
+				
+			
+        }
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+#logo{
+	width: 300px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* ヘ( ^o^)ノ＼(^_^ ) */
+
+/* estilo para a imagem do home se ajustar ao viewport-----------------*/
+
+#container {
+    width: 100%; /* 100% da largura do viewport */
+    
+    margin: 0; /* Remove margens para garantir que o container ocupe toda a largura do viewport */
+    overflow: hidden; /* Garante que não haverá overflow de conteúdo */
+}
+
+#container img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do container */
+    height: 100%; /* Mantém a proporção original da imagem */
+    display: block; /* Remove espaçamento extra abaixo da imagem quando ela é exibida como bloco */
+}
+
+/*----------------------------------contentor dos peixes gif------------------------------------------------*/
+
+#peixe{
+	
+	width: 500px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+/*--------- contentor para a introdução-------------*/
+
+#scrollintro{
+	scroll-behavior: smooth;
+}
+
+#introducao{
+	overflow: hidden;
+}
+
+
+
+.conteinerCentralizado {
+      background-color: #99B69D;
+      text-align: center;
+  
+	padding-bottom: 30px;
+      color: white; /* Cor do texto dentro do contêiner */
+	overflow: hidden;
+    }
+
+   .conteinerCentralizado img {
+    max-width: 100%;
+    height: auto;
+}
+
+.conteinerCentralizado2 {
+      background-color: #99B69D;
+      text-align: center;
+  
+	padding-bottom: 30px;
+      color: white; /* Cor do texto dentro do contêiner */
+	overflow: hidden;
+	
+    }
+
+   .conteinerCentralizado2 img {
+    max-width: 100%;
+    height: auto;
+	   padding-bottom: 20px;
+}
+
+
+
+.bolhasv2{
+	padding-top: 400px;
+}
+
+/*--------- bolhas ------------------------------------------------------*/
+
+   .bubbles {
+            position: fixed;
+            bottom: -160px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content:center;
+            align-items: flex-end;
+            margin-bottom: 1px; /* Espaçamento entre as imagens */
+	    opacity: 0; /* Inicialmente, as imagens são invisíveis */
+            transition: opacity 0.5s ease; /* Adiciona uma transição suave */
+	    pointer-events: none;
+        }
+
+        .bubbles img {
+            max-width: 20%;
+            height: auto;
+            margin:  0; /* Espaçamento entre as imagens */
+			animation: bubble 3s linear infinite;
+			  transition: opacity 0s;
+        }
+
+ .bubbles.show {
+            opacity: 1;
+        }
+
+ .bubbles.show img {
+            transition: opacity 0s; 
+        }
+
+/*------ animaçao das bolhas--------------------*/
+
+@keyframes bubble{
+	0%{
+		transform: translateY(100vh);
+		opacity: 0;
+	}
+	50%{
+		
+		opacity: 1;
+	}
+	70%{
+		
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+
+.bubbles img:nth-child(1){
+	animation-delay: 2s;
+	
+}
+.bubbles img:nth-child(2){
+	animation-delay: 0.5s;
+}
+.bubbles img:nth-child(3){
+	animation-delay: 2.5s;
+		
+}
+.bubbles img:nth-child(4){
+	animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+	animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+	animation-delay: 4.5s;
+		
+}
+.bubbles img:nth-child(7){
+	animation-delay: 5s;
+		
+}
+.bubbles img:nth-child(8){
+	animation-delay: 3.5s;
+		
+}
+.bubbles img:nth-child(9){
+	animation-delay: 1s;
+		
+}
+.bubbles img:nth-child(10){
+	animation-delay: 1.5s;
+		
+}
+.bubbles img:nth-child(11){
+	animation-delay: 0.7s;
+		
+}
+.bubbles img:nth-child(12){
+	animation-delay: 5.3s;
+		
+}
+
+/*---------------------------------------------------------------*/
+
+/*--------------------- contentores para o retrato de cada elemento do grupo ----------------------------------*/
+
+.main-container {
+      display: flex;
+         justify-content: space-around; /* Distribui os sub-contêineres com espaço entre eles */
+	margin-top: 70px;
+	 max-width: 100%;
+	box-sizing: border-box;
+    }
+
+.image2 {
+      margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+		vertical-align: middle;
+	display: flex;
+		
+    }
+
+/*-------- Nome de cada elemento do grupo-----------------------------------------------------------------*/
+
+h6{
+	font-family: acme;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*------------ contentor para as bolhas paradas ---------------------------*/
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+/*--------------------- texto da introducao--------------------------------------------*/
+
+#introtitulo{
+	color: #5f4564;
+	font-size: 30px;
+}
+
+#textointro{
+ font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    text-align: left;
+    max-width: 50%; 
+	
+    margin: 0 auto; 
+    overflow-wrap: break-word;
+}
+
+#intro{
+	
+width: 300px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------- pagina do sobre ----------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#paginasobre{
+	background-color: #DBC967;
+	
+}
+
+.conteinerbranco {
+	margin-top: 0px;
+      background-color: white;
+      text-align: center;
+  padding-top: 160px;
+	padding-bottom: 30px;
+      color: #5f4564; /* Cor do texto dentro do contêiner */
+	overflow: hidden;
+	position: relative;
+  z-index: 1; 
+    }
+
+/*----------------- rad more animacao-----------------*/
+
+#textosobre {
+   
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    text-align: left;
+     max-width: 50%; 
+    margin: 0 auto; /* Centraliza o elemento usando margin */
+    overflow-wrap: break-word;
+  
+}
+
+#textosobre.collapsed {
+  max-height: 100px;
+	  max-width: 50%; 
+}
+
+
+
+#readMoreBtn {
+    background-color: #5f4564;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+	border-radius: 10px;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*------------------- carrosel do grupo----------------------------*/
+
+#carousel-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+	padding-top: 600px;
+	padding-bottom: 50px;
+    }
+
+    #image-carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+    }
+
+.caption {
+color:  #5f4564;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px; /* Espaço entre a imagem e a legenda */
+    }
+
+    .arrow {
+      position: absolute;
+      top: 70%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+		color: white;
+      background-color: #5f4564;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s ease-in-out;
+		border-radius: 10px;
+    }
+
+    .arrow:hover {
+        background-color: rgba(95, 69, 100, 0.5);
+
+    }
+
+    #prev {
+      left: 10px;
+    }
+
+    #next {
+      right: 10px;
+    }
+
+.imagecarrosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	 align-self: center;
+}
+
+.imagecarrosel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*-------------- imagens das nuvens---------------------------*/
+
+.nuvens1 {
+	padding-top: 161px;
+ display: block;
+  width: 100%; 
+	z-index: -1;
+}
+
+.nuvens2 {
+ position: absolute;
+    
+	width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*------------ estilos para mobile / inferior a 768px ---------------------------------------------*/
+
+/*
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠠⠤⠤⠄⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣀⠀⣀⡀⠀⣠⠏⠀⠀⢰⡿⠿⠿⠗⠀⠀⠀⠐⠿⠿⢿⣶⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⡎⠀⡏⠀⡸⠒⠒⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⡃⣈⣷⢰⢂⠰⣀⣃⣀⣠⣤⣶⣶⣶⣶⣤⣀⣀⣀⣤⣶⣶⣶⣶⣤⣥⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⡱⠀⢸⣾⣾⢀⠏⢩⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⢸⠉⠉⠁⠰⠊⠀⢿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⠃⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠹⡣⢄⣿⠴⡏⠉⠀⠀⠀⠈⠛⢿⣿⣿⣿⠿⠋⠀⠈⠻⢿⣿⡿⠟⠁⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢱⠀⠀⠀⠋⠛⣽⠒⢲⠒⡤⠤⡤⠔⡖⠒⡞⠛⣟⢟⠊⠀⡘⠀⠀⠀⢰⠉⢱⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⡄⠀⠀⠀⠀⠀⠑⢞⠒⡞⠒⢺⠒⢺⠒⢺⠖⡁⠀⠀⢰⠃⠀⠀⠀⢸⠀⢼⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠐⡄⠀⠀⠀⠀⠐⣄⡈⠓⠒⠚⠒⠊⠉⣠⠞⠁⠀⡠⠃⠀⠀⠀⢀⡏⣴⠚⠒⠒⡄
+⠀⠀⠀⠀⠀⠀⠀⠈⠢⡀⠀⠀⠀⠀⠉⠀⠒⠒⠒⠂⠈⠀⠀⡠⠞⠁⠀⠀⠀⠀⡯⢀⠟⠂⠤⠤⡎
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠢⢄⣀⠀⠀⠀⠀⠀⣀⠤⠒⠈⠀⠀⠀⠀⠀⠀⠀⠙⣏⡦⠄⠀⣀⡜
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⠤⠤⠜
+
+*/
+
+/*----------- estilo da barra de menu -------------------*/
+
+@media(max-width:768px){
+	header{
+		position: fixed;
+	}
+	
+	.hamburger{
+		display: block;
+	}
+	
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	
+	.nav-menu{
+		position: fixed;
+		left: -120%;
+		top:54px;
+		gap:0;
+		flex-direction: column;
+		background-color: #5f4564;
+		width: 95%;
+		height: 100%;
+		display: flex;
+		 justify-content: flex-start;
+    align-items: flex-start;
+		transition: 0.3s;
+	
+		
+	}
+	
+	.nav-link{
+		margin: 30px;
+	
+		
+	}
+	
+	.nav-menu.active{
+		left: 0;
+		
+		
+	}
+	
+	.nav-item {
+    margin-right: 20px;
+		padding-top: 30px;
+		
+	
+}
+	
+	.a1{
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+}
+	
+	.a3{
+		display: none;
+	}
+	
+	.submenu {
+	
+	list-style: none;
+            display: block;
+            position: fixed;
+	 flex-direction: column;
+            background-color:  #5f4564 ;
+            box-shadow: none;
+	 text-align: left;
+    margin-left: 0;
+		padding-top: 0px;
+		
+        }
+
+	   .submenu-item {
+          margin-bottom: 8px;
+			padding-top: 25px;
+		padding-right: 200px;
+		   z-index: 3;
+			
+        }
+	
+	
+	.a2{
+	text-align: left;
+
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	
+  padding-bottom: 0px;
+			padding-top: 0px;
+	 padding-left: 0px;
+	padding-right: 20px;
+	
+}
+	
+	 .a2:hover {
+            background-color: #5f4564;
+		 color: white;
+	 
+	}
+	
+	
+	.a1:active,
+.a2:active {
+    background-color: white;
+    color:  #5f4564; 
+}
+	/*---------------------- logo-------------------------------------------*/
+	
+	
+	#logo{
+	width: 200px;
+}
+	
+	/*------------------------texto da introducao--------------------------*/
+	
+	#introtitulo{
+	color: #5f4564;
+	font-size: 28px;
+}
+
+	
+	#peixe{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	width: 1000px;
+}
+
+	#intro{
+		width: 300px;
+	}
+/*--------------------------------------------------------------------------------*/
+	
+	.imagecarrosel {
+
+		width: 300;
+}
+	
+/*----------------------------------------------------------------------*/
+	
+#textosobre{
+ font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    text-align: left;
+    max-width: 80%; /* Defina a largura desejada da linha */
+    margin: 0 auto; /* Centraliza o elemento usando margin */
+    overflow-wrap: break-word;
+}
+	
+/*----------------------------------------------------------------------------*/
+	
+	
+	.main-container {
+        flex-direction: column; /* Altera a direção do flex para vertical */
+        align-items: center; /* Alinha os itens no centro verticalmente */
+    }
+
+    
+/*-----------------------------------------------------------*/
+
+#textosobre.collapsed {
+  max-height: 100px;
+	  max-width: 80%; 
+}
+
+.arrow {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    
+    }
+	
+	#textointro{
+ 
+    max-width: 80%; 
+	
+
+}
+	#peixe{
+	
+	width: 500px;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+	
+
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+

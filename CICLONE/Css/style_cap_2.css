@@ -1,0 +1,87 @@
+
+/*------------------------IMAGENS / TEXTO-----------------------------------------------------------*/
+body {
+  background-color: #d7c776;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nuvens
+img{
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 100vh;
+}
+
+.p1 p{
+    padding: 20%;
+    top: 110svh;
+    left: 2vw;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    color: #8a6790;
+    text-align: center;
+  
+}
+
+.dinossauro img{
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 180vh;
+}
+
+.p2 p{
+  padding: 20%;
+  top: 270svh;
+  left: 2vw;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  color: #8a6790;
+  text-align: center;
+}
+
+.flores img{
+  display: block;
+  position: relative;
+  width: 50svh ;
+  top: 340svh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p3 p{
+  padding: 20%;
+  top: 325svh;
+  /*left: 2vw;*/
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  color: #8a6790;
+  text-align: center;
+}
+
+.passado{
+  opacity: 1.0;
+  font-size: 5em;
+  transition: 1.5s;
+  padding-left: 0;
+  padding-right: 0;
+}
+.passado:hover{
+  opacity: 0.1;
+}
+
+
+.relva img{
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 440svh;
+  margin-bottom: 0;
+}
+
